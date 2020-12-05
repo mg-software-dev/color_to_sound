@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+    <title>Color to sound</title>
+    
+  </head>
+  
+<body>
+
+
+<div>
+
+
+  <div class="container_div">
+
+    <div id="color_and_input">
+      
+      <div  id="div_color_selector">
+        <label for="color_selector">Select a color</label>
+        <input type="color" id="color_selector">
+      </div>
+  
+      <div id="rgb_div">
+  
+        <label for="red_input">R</label>
+        <input type="text" id="red_input"/>
+  
+        <label for="green_input">G</label>
+        <input type="text" id="green_input"/>
+  
+        <label for="blue_input">B</label>
+        <input type="text" id="blue_input"/>
+  
+      </div>
+      
+      <div id="color_block"></div>
+      
+      <div id="div_buttons">
+        <button id="btn_play" type="submit">Play Color</button>
+      </div>
+  
+  
+      </div>
+  
+      
+    </div>
+    
+  </div>
+  
+  
+  <div class="container_div">
+
+    <div id="div_canvas_img">
+        
+      <div id="input_div">
+        <label for="img_input" class="custom_input_button">Upload image...</label>
+        <label id="img_file_name"></label>
+        <input id="img_input" type="file"/>
+      </div>
+
+
+      <div id="btn_img_canvas">
+        <button id="btn_play_img">Play image</button>
+        <button id="btn_stop_img">Stop sound</button>
+      </div>
+
+      
+      <canvas id="img_canvas"></canvas>
+
+
+    </div>
+
+  </div>
+
+    
+  
+
+  <div class="container_div">
+
+   
+
+    <div id="sidebar_and_canvas">
+
+      
+
+      <!-- BEGIN STOLEN SECTION-->
+      <!-- this section of code is totally stolen from https://codepen.io/yananas/pen/rwvZvY -->
+      <div id="sidebar">
+
+
+        <div class="div_storage_and_play">
+          
+            <div class="draw_canvas_btn_sound_div">
+              <button id="btn_play_canvas">Play canvas</button>
+              <button id="btn_stop_img2"> Stop sound</button>
+
+              <div class="extra">
+                <a id="saveToImage" class="btn btn-warning">Save drawing</a>
+              </div>
+
+
+            </div>
+
+            <!-- <h3>Storage</h3>
+            <input type="button" value="Save" class="btn btn-warning" id="save">
+            <input type="button" value="Load" class="btn btn-warning" id="load">
+            <input type="button" value="Clear" class="btn btn-warning" id="clearCache"> -->
+          </div>
+  
+          
+
+          <div class="div_drawing_buttons">
+  
+            <div id="div_colorButtons">
+              <div class="colorButtons">
+                <h3>Colour</h3>
+                <input type="color" id="colorpicker" value="#c81464" class="colorpicker">
+              </div>
+      
+              <div class="colorButtons">
+                <h3>Bg Color</h3>
+                <input type="color" value="#ffffff" id="bgcolorpicker" class="colorpicker">
+              </div>
+            </div>
+    
+    
+            <div>
+    
+              <div class="toolsButtons">
+                <h3>Tools</h3>
+                <button id="eraser" class="btn btn-default"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span></button>
+                <button id="clear" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
+              </div>
+          
+              <div class="buttonSize">
+                <h3>Size (<span id="showSize">5</span>)</h3>
+                <input type="range" min="1" max="50" value="5" step="1" id="controlSize">
+              </div>
+          
+            </div>
+        
+    
+    
+            <div>
+    
+              <!-- <div class="canvasSize">
+                <h3>Canvas</h3>
+                <div class="input-group">
+                  <span class="input-group-addon">X</span>
+                  <input type="number" id="sizeX" class="form-control" placeholder="sizeX" value="800" class="size">
+                </div>
+    
+                <div class="input-group">
+                  <span class="input-group-addon">Y</span>
+                  <input type="number" id="sizeY" class="form-control" placeholder="sizeY" value="800" class="size">
+                </div>
+                <input type="button" class="updateSize btn btn-success" value="Update" id="canvasUpdate">
+              </div> -->
+    
+            </div>
+  
+  
+          </div>
+
+
+        </div>
+
+
+        
+
+
+
+
+        
+
+        
+      </div>
+
+      <!-- END STOLEN SECTION -->
+
+
+    </div>
+
+      
+
+  </div>
+
+
+</div>
+
+
+<link rel="stylesheet" href="./style.css" title="" type=""/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<script src="./drawing_canvas.js" type="text/javascript" charset="utf-8"></script>
+<script src="./color_to_sound.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html> 

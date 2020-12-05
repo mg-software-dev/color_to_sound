@@ -1,0 +1,300 @@
+
+
+body
+{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: aliceblue;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container_div
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#color_and_input
+{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 21px;
+}
+
+
+#div_color_selector
+{
+  display: grid;
+}
+
+
+#rgb_div
+{
+  width: 12em;
+  display: flex;
+  grid-row-start: 2;
+}
+
+
+#rgb_div > label
+{
+  margin: 6px;
+}
+
+
+#color_block
+{
+  width: 12em;
+  height: 12em;
+}
+
+
+
+#div_buttons
+{
+  grid-column-start: 2;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#div_canvas_img
+{
+  display: grid;
+  grid-template-columns: 15em 21em;
+  grid-template-rows: 19em 6em;
+  align-items: center;
+  justify-items: center;
+  margin: 30px;
+}
+
+
+#input_div
+{
+  align-self: center;
+  text-align: center;
+  display: grid;
+  padding-top: 60px
+}
+
+
+#btn_img_canvas
+{
+  grid-row-start: 2;
+  display: grid;
+}
+
+
+
+#img_canvas
+{
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  margin-left: 6em
+}
+
+
+#img_input
+{
+  visibility: hidden;
+  
+  /* this is for the gap when the file is uploaded */
+  width: 3%;
+}
+
+
+#canvas_div
+{
+    margin: 10px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+
+button
+{
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+  background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color:#2e466e;
+  border-radius:17px;
+  border:1px solid #1f2f47;
+  display:inline-block;
+  cursor:pointer;
+  color:aliceblue !important;
+  font-family:Arial !important;
+  font-size:16px !important;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+  font-weight: bold !important;
+}
+
+
+
+button:hover
+{
+  background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  background-color:#415989;
+}
+
+
+button:active
+{
+  position:relative;
+  top:1px;
+}
+
+
+.custom_input_button
+{
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+  background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color:#2e466e;
+  border-radius:17px;
+  border:1px solid #1f2f47;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:16px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+
+
+/* CANVAS SECTION this section of code 
+is totally stolen from https://codepen.io/yananas/pen/rwvZvY */
+
+
+#sidebar_and_canvas
+{
+  display: grid;
+  grid-template-columns: 72em;
+  grid-template-rows: 34em;
+  align-items: center;
+}
+
+
+.div_storage_and_play
+{
+  grid-column-start: 1;
+  width: 85%;
+}
+
+
+
+.div_drawing_buttons
+{
+  grid-column-start: 2;
+  width: 60%;
+}
+
+
+
+/* BEGIN STOLEN SECTION */
+
+.colorButtons {
+  display: block;
+  margin: 20px 0;
+}
+
+#draw_canvas
+{
+  cursor: crosshair;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  grid-column-start: 3;
+}
+
+
+
+div#sidebar
+{
+  display: grid;
+  grid-template-columns: 12em 12em 27em;
+  grid-template-rows: 28em;
+  align-items: center;
+  justify-items: center;
+  margin: 30px;
+  width: 14em;
+  padding: 20px 20px;
+  
+}
+
+/* canvas#canvas
+{
+  left: 150px;
+  top: 45px;
+} */
+
+
+.btn {
+  margin-bottom: 10px;
+  width: 100%;
+}
+input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.toolsButtons .btn {
+  width: 48%;
+}
+
+.sizeButtons .btn {
+  width: 48%;
+}
+
+.colorpicker {
+  background: transparent;
+  height: 40px;
+}
+
+
+
+/* END STOLEN SECTION */
